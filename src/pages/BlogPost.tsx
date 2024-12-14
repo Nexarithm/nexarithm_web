@@ -19,6 +19,12 @@ export default function BlogPost() {
         <h1 className="text-2xl md:text-4xl">{post.title}</h1>
         <p className="text-gray-600 text-sm md:text-base">Posted on {post.date}</p>
         <ReactMarkdown className="text-sm md:text-base">{post.content}</ReactMarkdown>
+        <div className="mt-4">
+          Follow me on: <br/>
+          <a href="https://nexarithm.com" className="text-blue-500 hover:text-blue-600">nexarithm.com</a> <br/>
+          <a href="https://x.com/nexarithm" className="text-blue-500 hover:text-blue-600">x.com/nexarithm</a> <br/>
+          <a href="https://substack.com/@nexarithm" className="text-blue-500 hover:text-blue-600">substack.com/@nexarithm</a>
+        </div>
       </article>
     </main>
   );

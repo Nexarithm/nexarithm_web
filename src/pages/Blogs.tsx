@@ -8,7 +8,7 @@ const Blogs: FC = () => {
         <h1 className="text-xl md:text-2xl font-bold mb-3 md:mb-5">Microblogs</h1>
         <ul className="space-y-3 md:space-y-4">
           <li className="bg-white p-3 md:p-4 rounded-lg shadow">
-            <Link to="/blog/1" className="block">
+            <Link to="/blog/intentions-of-this-site" className="block">
               <h2 className="text-lg md:text-xl font-bold hover:text-gray-600">
                 Intentions of this site
               </h2>

@@ -1,5 +1,6 @@
 interface BlogPost {
   id: string;
+  internalId: number;
   title: string;
   date: string;
   content: string;
@@ -7,7 +8,8 @@ interface BlogPost {
 
 export const blogs: BlogPost[] = [
   {
-    id: "1",
+    id: "intentions-of-this-site",
+    internalId: 1,
     title: "Intentions of this site",
     date: "December 13, 2024",
     content: `
