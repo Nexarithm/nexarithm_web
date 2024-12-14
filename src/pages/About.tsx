@@ -13,7 +13,7 @@ import {
 
 export const AboutSection: FC = () => {
   return (
-    <div className="max-w-[1200px]">
+    <div className="w-full max-w-[1200px] px-4">
       <div className="flex flex-col items-center w-full">
         <img
           src="/Nexarithm_Avatar.webp"

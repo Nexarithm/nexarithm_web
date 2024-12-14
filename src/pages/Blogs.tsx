@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Blogs: FC = () => {
   return (
     <main className="flex flex-col items-center p-5">
-      <div className="max-w-[800px] w-full">
-        <h1 className="text-2xl font-bold mb-5">Microblogs</h1>
+      <div className="w-full max-w-[800px] px-4">
+        <h1 className="text-xl md:text-2xl font-bold mb-5">Microblogs</h1>
         <ul className="space-y-4">
           <li className="bg-white p-4 rounded-lg shadow">
             <Link to="/blog/1" className="block">
