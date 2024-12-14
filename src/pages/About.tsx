@@ -34,7 +34,7 @@ export const AboutSection: FC = () => {
       </div>
 
       {/* Social Media Icons */}
-      <div className="w-full flex flex-col justify-center items-end gap-2 mt-4">
+      <div className="w-full flex flex-col justify-center items-center md:items-end gap-2 mt-4">
         <SocialLink href="https://x.com/nexarithm" icon={<TwitterIcon />} text="Twitter" />
         <SocialLink href="https://bsky.app/profile/nexarithm" icon={<BlueskyIcon />} text="Bluesky" />
         <SocialLink href="https://medium.com/@nexarithm" icon={<MediumIcon />} text="Medium" />
