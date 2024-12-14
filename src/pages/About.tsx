@@ -38,9 +38,9 @@ export const AboutSection: FC = () => {
         <SocialLink href="https://x.com/nexarithm" icon={<TwitterIcon />} text="Twitter" />
         <SocialLink href="https://bsky.app/profile/nexarithm" icon={<BlueskyIcon />} text="Bluesky" />
         <SocialLink href="https://medium.com/@nexarithm" icon={<MediumIcon />} text="Medium" />
-        <SocialLink href="https://nexarithm.substack.com" icon={<SubstackIcon />} text="Substack" />
+        <SocialLink href="https://substack.com/@nexarithm" icon={<SubstackIcon />} text="Substack" />
         <SocialLink href="https://news.ycombinator.com/user?id=nexarithm" icon={<HackerNewsIcon />} text="Hacker News" />
-        <SocialLink href="https://reddit.com/user/nexarithm" icon={<RedditIcon />} text="Reddit" />
+        <SocialLink href="https://www.reddit.com/user/InternationalToe5857" icon={<RedditIcon />} text="Reddit" />
         <SocialLink href="https://github.com/Nexarithm" icon={<GitHubIcon />} text="GitHub" />
         <SocialLink href="mailto:nexarithm@gmail.com" icon={<EmailIcon />} text="Email" />
       </div>
