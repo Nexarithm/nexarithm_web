@@ -37,7 +37,6 @@ export default function Header() {
 
         <div className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex w-full md:w-auto flex-col md:flex-row items-center mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-6`}>
           <a href="https://x.com/nexarithm" className="text-white hover:text-gray-300 block">Twitter</a>
-          <a href="https://bsky.app/profile/nexarithm.bsky.social" className="text-white hover:text-gray-300 block">BlueSky</a>
           <a href="https://github.com/Nexarithm" className="text-white hover:text-gray-300 block">GitHub</a>
         </div>
       </header>

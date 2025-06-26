@@ -2,9 +2,7 @@ import { FC } from 'react';
 import {
   SocialLink,
   TwitterIcon,
-  BlueskyIcon,
-  MediumIcon,
-  SubstackIcon,
+  BlogIcon,
   HackerNewsIcon,
   RedditIcon,
   GitHubIcon,
@@ -36,9 +34,7 @@ export const AboutSection: FC = () => {
       {/* Social Media Icons */}
       <div className="w-full flex flex-col justify-center items-center md:items-end gap-2 mt-4">
         <SocialLink href="https://x.com/nexarithm" icon={<TwitterIcon />} text="Twitter" />
-        <SocialLink href="https://bsky.app/profile/nexarithm" icon={<BlueskyIcon />} text="Bluesky" />
-        <SocialLink href="https://medium.com/@nexarithm" icon={<MediumIcon />} text="Medium" />
-        <SocialLink href="https://substack.com/@nexarithm" icon={<SubstackIcon />} text="Substack" />
+        <SocialLink href="https://www.proxai.co/blog" icon={<BlogIcon />} text="Blog" />
         <SocialLink href="https://news.ycombinator.com/user?id=nexarithm" icon={<HackerNewsIcon />} text="Hacker News" />
         <SocialLink href="https://www.reddit.com/user/InternationalToe5857" icon={<RedditIcon />} text="Reddit" />
         <SocialLink href="https://github.com/Nexarithm" icon={<GitHubIcon />} text="GitHub" />

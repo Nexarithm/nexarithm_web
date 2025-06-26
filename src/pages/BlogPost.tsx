@@ -23,7 +23,7 @@ export default function BlogPost() {
           Follow me on: <br/>
           <a href="https://nexarithm.com" className="text-blue-500 hover:text-blue-600">nexarithm.com</a> <br/>
           <a href="https://x.com/nexarithm" className="text-blue-500 hover:text-blue-600">x.com/nexarithm</a> <br/>
-          <a href="https://substack.com/@nexarithm" className="text-blue-500 hover:text-blue-600">substack.com/@nexarithm</a>
+          <a href="https://www.proxai.co/blog" className="text-blue-500 hover:text-blue-600">proxai.co/blog</a>
         </div>
       </article>
     </main>

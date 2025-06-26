@@ -5,6 +5,7 @@ import About from './pages/About';
 import Blogs from './pages/Blogs';
 import BlogPost from './pages/BlogPost';
 import Projects from './pages/Projects';
+import ProxAI from './pages/ProxAI';
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blog/:blogId" element={<BlogPost />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/proxai" element={<ProxAI />} />
         </Routes>
         <Analytics />
       </div>
