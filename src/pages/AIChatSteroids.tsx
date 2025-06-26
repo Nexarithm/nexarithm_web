@@ -5,43 +5,51 @@ const AIChatSteroids: FC = () => {
     <main className="flex flex-col items-center p-2 md:p-5">
       <article className="prose prose-sm md:prose prose-slate w-full max-w-[800px] bg-white p-4 md:p-8 rounded-lg shadow">
         <h1 className="text-2xl md:text-4xl">AI Chat on Steroids! 🚀</h1>
-        
-        <div className="flex flex-wrap gap-3 mb-6">
-          <a 
-            href="https://www.proxai.co/blog/archive/multi-model-ai-chat-app" 
-            target="_blank" 
+
+        <div className="flex justify-center mb-1">
+          <img
+            src="/ai_chat_on_steroids.png"
+            alt="AI Chat on Steroids Project"
+            className="w-1/2 rounded-lg shadow-md"
+          />
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-3 mb-6">
+          <a
+            href="https://www.proxai.co/blog/archive/multi-model-ai-chat-app"
+            target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 text-sm no-underline"
           >
             Read Blog Post
           </a>
-          <a 
-            href="https://github.com/Nexarithm/multi_model_chat" 
-            target="_blank" 
+          <a
+            href="https://github.com/Nexarithm/multi_model_chat"
+            target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 text-sm no-underline"
           >
             GitHub Repository
           </a>
         </div>
-        
+
         <div className="text-sm md:text-base">
           <p>
-            I realized I was asking the same questions to Gemini, OpenAI, Claude, and sometimes 
-            DeepSeek and Grok simultaneously, then continuing conversations from whichever tab 
-            gave the best answer. Instead of investigating why I do this, I decided to automate 
-            the workflow. This app queries 10+ AI models in parallel and gives you two types of 
-            responses: the consensus answer that most models agree on, and unique contributions 
+            I realized I was asking the same questions to Gemini, OpenAI, Claude, and sometimes
+            DeepSeek and Grok simultaneously, then continuing conversations from whichever tab
+            gave the best answer. Instead of investigating why I do this, I decided to automate
+            the workflow. This app queries 10+ AI models in parallel and gives you two types of
+            responses: the consensus answer that most models agree on, and unique contributions
             from each model that others missed.
           </p>
-          
+
           <p>
-            Built entirely through "vibe coding" with Claude Code and ProxAI - zero manual code 
-            changes made! It's become my go-to for 80% of my AI queries now. The experience feels 
-            like having a panel of AI experts discuss your question and present both their 
+            Built entirely through "vibe coding" with Claude Code and ProxAI - zero manual code
+            changes made! It's become my go-to for 80% of my AI queries now. The experience feels
+            like having a panel of AI experts discuss your question and present both their
             collective wisdom and individual insights, all in real-time with progress tracking.
           </p>
-          
+
           <div className="mt-6">
             Follow me on: <br/>
             <a href="https://nexarithm.com" className="text-blue-500 hover:text-blue-600">nexarithm.com</a> <br/>
