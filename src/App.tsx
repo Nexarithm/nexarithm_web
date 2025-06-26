@@ -6,6 +6,7 @@ import Blogs from './pages/Blogs';
 import BlogPost from './pages/BlogPost';
 import Projects from './pages/Projects';
 import ProxAI from './pages/ProxAI';
+import AIChatSteroids from './pages/AIChatSteroids';
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/blog/:blogId" element={<BlogPost />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/proxai" element={<ProxAI />} />
+          <Route path="/projects/ai-chat-steroids" element={<AIChatSteroids />} />
         </Routes>
         <Analytics />
       </div>

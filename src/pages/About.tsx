@@ -23,7 +23,7 @@ export const AboutSection: FC = () => {
 
       <div className="w-full">
         <p className="text-lg text-right leading-loose">
-          I'm Nexarithm, and this is my new digital playground where I share my half-baked thoughts on random things. <br/>
+          I'm Nexarithm, and this is my digital playground where I share my half-baked thoughts on random things. <br/>
           <br/>
           I have been hacking things for a long time. <br/>
           During the day, I work in the Artificial Intelligence research realm. <br/>
@@ -35,9 +35,9 @@ export const AboutSection: FC = () => {
       <div className="w-full flex flex-col justify-center items-center md:items-end gap-2 mt-4">
         <SocialLink href="https://x.com/nexarithm" icon={<TwitterIcon />} text="Twitter" />
         <SocialLink href="https://www.proxai.co/blog" icon={<BlogIcon />} text="Blog" />
+        <SocialLink href="https://github.com/Nexarithm" icon={<GitHubIcon />} text="GitHub" />
         <SocialLink href="https://news.ycombinator.com/user?id=nexarithm" icon={<HackerNewsIcon />} text="Hacker News" />
         <SocialLink href="https://www.reddit.com/user/InternationalToe5857" icon={<RedditIcon />} text="Reddit" />
-        <SocialLink href="https://github.com/Nexarithm" icon={<GitHubIcon />} text="GitHub" />
         <SocialLink href="mailto:nexarithm@gmail.com" icon={<EmailIcon />} text="Email" />
       </div>
     </div>

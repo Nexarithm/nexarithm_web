@@ -12,7 +12,15 @@ const Projects: FC = () => {
               <h2 className="text-lg md:text-xl font-bold hover:text-gray-600">
                 ProxAI: Unified AI provider API for Developers
               </h2>
-              <p className="text-gray-600 text-sm md:text-base mt-1 md:mt-2">Click to learn more</p>
+              <p className="text-gray-600 text-sm md:text-base mt-1 md:mt-2">Main Project</p>
+            </Link>
+          </li>
+          <li className="bg-white p-3 md:p-4 rounded-lg shadow">
+            <Link to="/projects/ai-chat-steroids" className="block">
+              <h2 className="text-lg md:text-xl font-bold hover:text-gray-600">
+                AI Chat on Steroids! 🚀
+              </h2>
+              <p className="text-gray-600 text-sm md:text-base mt-1 md:mt-2">Side Project</p>
             </Link>
           </li>
         </ul>
