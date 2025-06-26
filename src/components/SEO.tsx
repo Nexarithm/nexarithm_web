@@ -18,7 +18,7 @@ const SEO: React.FC<SEOProps> = ({
   description,
   url,
   type = 'website',
-  image = '/avatar.jpg',
+  image = '/Nexarithm_Avatar.png',
   author = 'Nexarithm',
   publishedTime,
   modifiedTime,
@@ -35,9 +35,12 @@ const SEO: React.FC<SEOProps> = ({
     // Update document title
     document.title = fullTitle;
 
-    // Remove existing meta tags
+    // Remove existing meta tags and links
     const existingMetas = document.querySelectorAll('meta[data-seo]');
     existingMetas.forEach(meta => meta.remove());
+    
+    const existingLinks = document.querySelectorAll('link[data-seo]');
+    existingLinks.forEach(link => link.remove());
 
     // Remove existing JSON-LD
     const existingJsonLd = document.querySelector('script[type="application/ld+json"]');
@@ -84,7 +87,11 @@ const SEO: React.FC<SEOProps> = ({
       ] : []),
       
       // Canonical URL
-      { rel: 'canonical', href: fullUrl }
+      { rel: 'canonical', href: fullUrl },
+      
+      // Favicon
+      { rel: 'icon', href: '/Nexarithm_Avatar.png' },
+      { rel: 'apple-touch-icon', href: '/Nexarithm_Avatar.png' }
     ];
 
     // Add meta tags to head
