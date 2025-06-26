@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nexarithm.com/sitemap.xml
+
+# Common crawl delays
+Crawl-delay: 1
+
+# Block common bot paths (optional)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
