@@ -1,9 +1,22 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import { createWebsiteStructuredData } from '../utils/structuredData';
 
 const Blogs: FC = () => {
+  const websiteStructuredData = createWebsiteStructuredData();
+  
   return (
-    <main className="flex flex-col items-center p-2 md:p-5">
+    <>
+      <SEO
+        title="Microblogs"
+        description="Read insights and thoughts about AI, development, and technology from an AI research engineer turned indie hacker."
+        url="/blogs"
+        type="website"
+        tags={['blog', 'AI', 'development', 'technology', 'microblogs']}
+        structuredData={websiteStructuredData}
+      />
+      <main className="flex flex-col items-center p-2 md:p-5">
       <div className="w-full max-w-[800px] px-2 md:px-4">
         <h1 className="text-xl md:text-2xl font-bold mb-3 md:mb-5">Microblogs</h1>
         <ul className="space-y-3 md:space-y-4">
@@ -17,7 +30,8 @@ const Blogs: FC = () => {
           </li>
         </ul>
       </div>
-    </main>
+      </main>
+    </>
   );
 };
 

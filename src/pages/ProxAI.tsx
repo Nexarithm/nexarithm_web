@@ -1,9 +1,46 @@
 import { FC } from 'react';
+import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { createProjectStructuredData, createBreadcrumbStructuredData } from '../utils/structuredData';
 
 const ProxAI: FC = () => {
+  const title = "ProxAI: Unified AI provider API for Developers";
+  const description = "The AI landscape is fragmented with dozens of providers, each with unique APIs. ProxAI solves this with a unified interface that lets you write code once and seamlessly switch between OpenAI, Anthropic, Google, and 15+ other providers.";
+  
+  // Create structured data
+  const projectStructuredData = createProjectStructuredData({
+    name: "ProxAI",
+    description,
+    url: "/projects/proxai",
+    image: "/proxai.png",
+    githubUrl: "https://github.com/proxai/proxai",
+    websiteUrl: "https://proxai.co"
+  });
+  
+  const breadcrumbStructuredData = createBreadcrumbStructuredData([
+    { label: 'Projects', url: '/projects' },
+    { label: 'ProxAI' }
+  ]);
+  
+  const combinedStructuredData = [projectStructuredData, breadcrumbStructuredData];
+
   return (
-    <main className="flex flex-col items-center p-2 md:p-5">
+    <>
+      <SEO
+        title={title}
+        description={description}
+        url="/projects/proxai"
+        type="website"
+        image="/proxai.png"
+        tags={['AI', 'API', 'development', 'tools', 'OpenAI', 'Anthropic']}
+        structuredData={combinedStructuredData}
+      />
+      <main className="flex flex-col items-center p-2 md:p-5">
       <article className="prose prose-sm md:prose prose-slate w-full max-w-[800px] bg-white p-4 md:p-8 rounded-lg shadow">
+        <Breadcrumbs items={[
+          { label: 'Projects', path: '/projects' },
+          { label: 'ProxAI' }
+        ]} />
         <h1 className="text-2xl md:text-4xl">ProxAI: Unified AI provider API for Developers</h1>
 
         <div className="flex justify-center mb-1">
@@ -55,7 +92,8 @@ const ProxAI: FC = () => {
           </div>
         </div>
       </article>
-    </main>
+      </main>
+    </>
   );
 };
 
