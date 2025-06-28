@@ -30,7 +30,7 @@ export default function Header() {
 
         {/* Navigation Links */}
         <div className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex w-full md:w-auto flex-col md:flex-row items-center mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-6`}>
-          <Link to="/blogs" className="text-white hover:text-gray-300 block">MICROBLOGS</Link>
+          <Link to="/blogs" className="text-white hover:text-gray-300 block">BLOGS</Link>
           <Link to="/projects" className="text-white hover:text-gray-300 block">PROJECTS</Link>
           <Link to="/about" className="text-white hover:text-gray-300 block">ABOUT</Link>
         </div>

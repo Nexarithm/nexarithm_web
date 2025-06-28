@@ -11,13 +11,13 @@ export default function BlogPost() {
 
   const post = blogs.find(blog => blog.id === blogId);
 
-  if (!post) {
+  if (!post || post.externalLink) {
     navigate('/blogs');
     return null;
   }
 
   // Create description from content (first 160 characters)
-  const description = post.content.trim().substring(0, 160).replace(/\n/g, ' ') + '...';
+  const description = post.content ? post.content.trim().substring(0, 160).replace(/\n/g, ' ') + '...' : '';
   
   // Format date for structured data
   const publishedDate = new Date(post.date).toISOString();
